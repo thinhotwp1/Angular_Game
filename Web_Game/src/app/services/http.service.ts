@@ -18,9 +18,8 @@ export class HttpService {
     if(search){
       params = new HttpParams().set('oderString',oderString).set('search',search);
     }
-    return this.http.get<APIResponse<Game>>(`${env.BASE_URL}/game`){
-      params:params;
-
-    }
+    return this.http.get<APIResponse<Game>>(`${env.BASE_URL}/games`,{
+      params:params,
+    })
   }
 }
