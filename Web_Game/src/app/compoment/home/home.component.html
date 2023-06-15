@@ -1,0 +1,38 @@
+<!-- filters game start -->
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select
+    panelClass="sort-select"
+    [(ngModel)]="sort"
+    >
+    <mat-option value="name">Name</mat-option>
+    <mat-option value="-release">Release</mat-option>
+    <mat-option value="-added">Added</mat-option>
+    <mat-option value="-created">Created</mat-option>
+    <mat-option value="-updated">Updated</mat-option>
+    <mat-option value="-rating">Rating</mat-option>
+    <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<!-- filters game end -->
+
+<!-- show games start -->
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.9J-aNUSO7XIVuOVKmRcP9gHaEK&pid=Api&P=0&h=180" alt="thumbnail" class="thumbnail"/>
+    </div>
+    <div class="game-description">
+      <p class="game-name">Name</p>
+      <div class="game-platforms">
+        <img src="https://flyclipart.com/thumb2/xbox-logo-327686.png"
+        alt="slug" class="game-platform">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- show games end -->
+
+
